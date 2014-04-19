@@ -1,4 +1,10 @@
 <h3>It is</h3>
 <h1><%= newCity.currentTemp %> degrees</h1>
-<h3>in <%= newCity.name %></h3>
-<p class="lead">more information to be placed here</p>
+<h3>in <%= newCity.location.city %>, <%= newCity.location.region %></h3>
+
+<% _.each(newCity.forecast, function (day) { %>
+<div id=day-in-forecast>
+    <span class="lead"><%= day.day %>:</span>
+    <span><%= day.text %> with a high of <%= day.high %>, and a low of <%= day.low %></span>
+</div>
+<% }); %>

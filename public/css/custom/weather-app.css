@@ -44,11 +44,7 @@ ul {
     padding: 10px 0 10px 0;
 }
 
-#plz {
-    position: fixed;
-    right: 0px;
-    bottom: 10%;
-    width: 260px;
-    padding: 40px;
-    background-color: rgba(249,249,249, .6);
+#day-in-forecast p {
+    display: inline;
+    font-weight: 900;
 }
