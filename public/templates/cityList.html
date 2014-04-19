@@ -3,5 +3,6 @@
     <li><%= city %></li>
     <% }); %>
 </ul>
-<input id= "city-input-field" type="text" placeholder="Enter a city and click add">
+<input id= "city-input-field" type="text" placeholder="Enter a city and click add" data-parsley-required="true" data-parsley-minlength="1" data-parsley-city />
 <input id="add-city-button" type="button" value="Add" />
+

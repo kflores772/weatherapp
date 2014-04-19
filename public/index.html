@@ -10,9 +10,10 @@
 
     <title>Weather App - minesense</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom/weather-app.css" rel="stylesheet">
+    <link href="css/custom/parsley.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -45,22 +46,21 @@
 
     <div class="container">
         <div id="weather-selector">
-            <div id="city-input" />
+            <div id="city-input" data-parsley-validate>
             <form>
-                <input id= "city-input-field" type="text" placeholder="Enter a city and click add">
+                <input id= "city-input-field" type="text" placeholder="Enter a city and click add" data-parsley-required="true" data-parsley-minlength="1" data-parsley-city />
                 <input id="add-city-button" type="button" value="Add" />
             </form>
+            </div>
         </div>
     </div>
     
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/js/framework/jquery-1.11.0.min.js"></script>
-    <script src="/js/framework/underscore-min.js"></script>
+    <script src="js/framework/jquery-1.11.0.min.js"></script>
+    <script src="js/framework/underscore-min.js"></script>
     <script src="js/framework/backbone-min.js"></script>
     <script src="js/framework/bootstrap.min.js"></script>
-    <script src="/js/weatherapp.js"></script>
+    <script src="js/framework/parsley.min.js"></script>
+    <script src="js/weatherapp.js"></script>
   </body>
 </html>
