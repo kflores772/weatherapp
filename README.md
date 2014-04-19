@@ -6,7 +6,7 @@ This is a simple weather application using express, backbone and bootstrap
 
 ##Setup
 1. `npm install`
-2. `grunt`
+2. `grunt` (if you do not have grunt accessible globally, `npm install -g grunt-cli`)
 3. `node app.js`
 
 ##Structure
