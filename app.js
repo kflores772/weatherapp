@@ -19,6 +19,3 @@ app.get('/', function (req, res) {
 server = app.listen(4000, function () {
     console.log('Listening on port %d', server.address().port);
 });
-
-cp.exec("open http://localhost:4000");
-
